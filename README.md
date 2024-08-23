@@ -13,4 +13,4 @@
 
 | Assignment | Due Date | Done | Location | Notes |
 | ---------- | -------- | ---- | -------- | ----- |
-| Name | 00/00/24 | &#9745; | Location | Notes |
+| Hello | 08/23/24 | &#9745; | [Screenshot](/hello/screenshot.png) | Simple hello world program that runs inside a container. |
