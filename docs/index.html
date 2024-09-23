@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Number to Binary Calculator</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <form id="calculator-form">
+                <label for="number-input">Enter a Number:</label>
+                <input type="number" id="number-input" placeholder="Enter a number" required>
+                <button type="submit">Convert to Binary</button>
+            </form>
+            <p class="result" id="result-output"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Number to Binary Calculator</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('calculator-form');
+        const resultOutput = document.getElementById('result-output');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const numberInput = document.getElementById('number-input').value;
+            const binaryResult = parseInt(numberInput).toString(2);
+            resultOutput.textContent = `Binary: ${binaryResult}`;
+        });
+    </script>
+</body>
+</html>
